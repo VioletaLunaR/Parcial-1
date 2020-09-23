@@ -23,7 +23,9 @@
             </div>
 
             <div class="col-3">
-                <img src="/images/car.png" alt="Carrito de compras" id="car">
+                <a class="btn" id="btn-car">
+                    <img src="/images/car.png" alt="Carrito de compras" id="car">
+                </a>
             </div>
             <div class="col-3">
                 <p id="car-items">Items i </p>
@@ -43,19 +45,19 @@
             <div class="collapse navbar-collapse" id="navbarOptions">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="Burgers">Burgers <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#Burgers">Burgers <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Tacos">Tacos</a>
+                        <a class="nav-link" href="#Tacos">Tacos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Salads">Salads</a>
+                        <a class="nav-link" href="#Salads">Salads</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Desserts">Desserts</a>
+                        <a class="nav-link" href="#Desserts">Desserts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Drink & Sides">Drinks & Sides</a>
+                        <a class="nav-link" href="#Drinks & Sides">Drinks & Sides</a>
                     </li>
                 </ul>
             </div>
@@ -66,6 +68,45 @@
 <body>
 
     <main>
+        <div class="continer" id="carDetail">
+            <h2>Order Detail</h2>
+            <table class="table table-striped" id="itemsTable">
+
+            </table>
+
+            <div class="row">
+                <div class="col-6">
+                    <p id="totalPrice"></p>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#ModalCofirmCancel">Cancel</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-success" id="btn-cofirm">Confirm order</button>
+                </div>
+            </div>
+        </div>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="#ModalCofirmCancel" aria-hidden="false">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLabel">Cancel de order</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    Are you sure about cancelling the order?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">No, I want cotinue adding products</button>
+                  <button type="button" class="btn btn-secundary" id="btn-cancel-order">Yes, I want to cancel the order</button>
+                </div>
+              </div>
+            </div>
+          </div>
         <a name="Burguers"></a>
         <h2>Burguers</h2>
         <div class="card-group" id="Burguers">
@@ -86,14 +127,14 @@
         <div class="card-group" id="Desserts">
 
         </div>
-        <a name="Driks & Sides"></a>
+        <a name="Drinks & Sides"></a>
         <h2>Drinks & Sides</h2>
         <div class="card-group" id="Drinks and Sides">
 
         </div>
     </main>
     <!-- Js-->
-<script src="getdata.js"></script>
+    <script src="getdata.js"></script>
 
 </body>
 

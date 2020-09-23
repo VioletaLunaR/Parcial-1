@@ -3,8 +3,10 @@ header {
     font-family: "Satisfy", cursive;
     font-size: 1.5rem;
   }
-  #car {
-    max-width: 2rem;
+  a {
+    #car {
+      max-width: 2rem;
+    }
   }
   #img-banner {
     max-height: 20rem;
@@ -26,10 +28,10 @@ header {
 }
 
 h2 {
-    text-align: center;
-    margin: 1rem;
+  text-align: center;
+  margin: 1rem;
 }
 
-h3{
-    font-size: 1rem;
+h3 {
+  font-size: 1rem;
 }
