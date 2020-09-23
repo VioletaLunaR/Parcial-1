@@ -1,0 +1,49 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header h1 {
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+}
+
+header #car {
+  max-width: 2rem;
+}
+
+header #img-banner {
+  max-height: 20rem;
+  width: 100rem;
+  -o-object-fit: max-content;
+     object-fit: max-content;
+}
+
+.card-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-group .card-img-top {
+  max-height: 10rem;
+  max-width: 10rem;
+  -o-object-fit: max-content;
+     object-fit: max-content;
+}
+
+h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEI,MAFE,CAEF,EAAE,CACF;EACI,WAAW,EAAE,kBACjB;CAAC",
+    "sources": [
+        "syles.scss"
+    ],
+    "names": [],
+    "file": "syles.css"
+}
