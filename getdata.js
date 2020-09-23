@@ -15,10 +15,11 @@ ordDetail = document.getElementById("carDetail");
 ordDetail.style.visibility = "hidden";
 
 btnCfO = document.getElementById("btn-cofirm");
-btnCfO.addEventListener("click", confirmOrder());
+console.log(btnCfO);
+btnCfO.addEventListener("click",()  =>confirmOrder());
 
 btnCnO=document.getElementById("btn-cancel-order");
-btnCnO.addEventListener("click", cancerlOrder());
+btnCnO.addEventListener("click",()=> cancerlOrder());
 
 
 
